@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Android 12+ backup / device-transfer rules.
+    android:allowBackup="false" already disables backup; these rules are a second line of defence.
+    - files/datastore/ : DataStore preferences (TV profiles, settings, favorites)
+    - files/secure/    : Keystore-encrypted ADB host keys (the Keystore wrapping key itself
+                         is hardware-bound and never leaves the device)
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="file" path="datastore/" />
+        <exclude domain="file" path="secure/" />
+        <exclude domain="sharedpref" path="." />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="file" path="datastore/" />
+        <exclude domain="file" path="secure/" />
+        <exclude domain="sharedpref" path="." />
+    </device-transfer>
+</data-extraction-rules>

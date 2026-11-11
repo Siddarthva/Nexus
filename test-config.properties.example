@@ -1,0 +1,20 @@
+# Template for the optional, @Ignore'd real-pairing smoke test
+# (app/src/androidTest/.../smoke/RealPairingSmokeTest.kt).
+# Copy to test-config.properties (same folder) and fill in values from your own TV.
+# test-config.properties is git-ignored. NEVER commit it.
+#
+# app/build.gradle.kts reads only keys starting with "smoke" and passes them to the test
+# as instrumentation arguments (nexus.smokeHost, ...). If the file is missing, the build
+# still works and the smoke test simply has no values. See docs/test-plan.md.
+
+# IPv4 address of the TV (or Android TV emulator) as shown on its Wireless debugging screen.
+smokeHost=192.168.x.x
+
+# Pairing port shown under "Pair device with pairing code". Changes every time.
+smokePairingPort=XXXXX
+
+# Connect port shown on the main Wireless debugging screen ("IP address & port").
+smokeConnectPort=XXXXX
+
+# Six-digit pairing code shown on the TV. Single-use and expires quickly.
+smokePairingCode=XXXXXX

@@ -1,0 +1,53 @@
+# --- Android Studio / IntelliJ -------------------------------------------------
+# Ignore all IDE state (it holds machine-specific paths and device IDs),
+# but keep shared run configurations if any are added later.
+.idea/*
+!.idea/runConfigurations/
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+
+# --- Gradle and Kotlin build state ---------------------------------------------
+.gradle/
+.kotlin/
+build/
+app/build/
+# SDK location for this machine only. Android Studio regenerates it.
+local.properties
+
+# --- Build outputs -------------------------------------------------------------
+build-outputs/
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# --- Secrets and local environment (never commit) ------------------------------
+# Copy the matching *.example file and fill it in locally.
+keystore.properties
+test-config.properties
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key
+.env
+.env.*
+!.env.example
+
+# --- Logs and JVM crash data ---------------------------------------------------
+*.log
+hs_err_pid*
+replay_pid*
+
+# --- OS files ------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- Always tracked (re-included in case a rule above ever matches them) --------
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+!gradlew
+!gradlew.bat

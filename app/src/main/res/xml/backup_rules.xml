@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Backup rules for Android 11 and lower. Backup is disabled with android:allowBackup="false";
+    these excludes make sure DataStore and Keystore-encrypted secrets are never included
+    even if that flag is changed later.
+-->
+<full-backup-content>
+    <exclude domain="file" path="datastore/" />
+    <exclude domain="file" path="secure/" />
+    <exclude domain="sharedpref" path="." />
+</full-backup-content>

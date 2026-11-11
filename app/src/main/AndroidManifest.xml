@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- INTERNET: required to open TCP/TLS sockets to the TV's Wireless Debugging
+         pairing and connect ports on the local Wi-Fi network. No data is sent to the internet. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- ACCESS_NETWORK_STATE: lets the app check that the phone is on a network before
+         attempting to pair/connect, so it can show a clear "network unreachable" error. -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- ACCESS_LOCAL_NETWORK: Android 17 (API 37) blocks connections to LAN addresses for apps
+         targeting API 37+ unless this runtime permission is granted. The TV is a LAN device, so
+         pairing and connecting require it. It is requested at runtime only on API 37+ and only
+         when the user starts pairing or connecting. Older Android versions ignore it. -->
+    <uses-permission android:name="android.permission.ACCESS_LOCAL_NETWORK" />
+
+    <application
+        android:name=".app.NexusApplication"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NexusRemote">
+
+        <activity
+            android:name=".app.MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.NexusRemote"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Quick Settings tile. The system binds it only while the tile is visible;
+             it starts no background work and opens the Remote screen when tapped. -->
+        <service
+            android:name=".tile.RemoteTileService"
+            android:exported="true"
+            android:icon="@drawable/ic_tile_remote"
+            android:label="@string/tile_label"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.TOGGLEABLE_TILE"
+                android:value="false" />
+        </service>
+    </application>
+
+</manifest>

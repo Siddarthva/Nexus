@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="nexus_background">#FF0A0C14</color>
+    <color name="nexus_accent">#FFA48BFF</color>
+    <!-- Launcher icon background layer (deep navy). -->
+    <color name="ic_launcher_background">#FF141634</color>
+</resources>

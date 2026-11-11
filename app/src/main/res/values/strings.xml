@@ -1,0 +1,257 @@
+<resources>
+    <string name="app_name">NEXUS TV Remote</string>
+    <string name="brand_name">NEXUS</string>
+    <string name="brand_tagline">TV Remote</string>
+    <string name="tile_label">NEXUS Remote</string>
+
+    <!-- Common -->
+    <string name="action_cancel">Cancel</string>
+    <string name="action_save">Save</string>
+    <string name="action_retry">Retry</string>
+    <string name="action_close">Close</string>
+    <string name="cd_navigate_back">Navigate back</string>
+    <string name="cd_expand">Expand</string>
+    <string name="cd_collapse">Collapse</string>
+    <string name="bullet_item">• %1$s</string>
+
+    <!-- Connection status -->
+    <string name="status_connected">Connected</string>
+    <string name="status_connecting">Connecting…</string>
+    <string name="status_pairing">Pairing…</string>
+    <string name="status_disconnected">Disconnected</string>
+    <string name="status_pairing_required">Pairing required</string>
+    <string name="status_failed">Connection failed</string>
+    <string name="status_unsupported">Unsupported</string>
+    <string name="cd_connection_status">Connection status: %1$s</string>
+
+    <!-- Error messages (one per ErrorCode) -->
+    <string name="error_invalid_input">Some input is not valid. Check the highlighted fields.</string>
+    <string name="error_pairing_code_wrong">Wrong pairing code. Check the six digits on the TV and try again.</string>
+    <string name="error_pairing_timeout">The TV did not answer in time. Keep the pairing screen open on the TV and try again.</string>
+    <string name="error_pairing_expired">The pairing code or port has expired. On the TV, choose \"Pair device with pairing code\" again to get a fresh code and port.</string>
+    <string name="error_not_paired">This phone is not paired with the TV yet. Pair it first.</string>
+    <string name="error_auth_revoked">The TV no longer trusts this phone. Pair again to continue.</string>
+    <string name="error_wireless_debug_off">Wireless debugging seems to be off, or the connect port changed. Turn it on and check the port on the TV.</string>
+    <string name="error_network_unreachable">Can\'t reach the TV. Make sure the phone and TV are on the same Wi-Fi (not a guest network).</string>
+    <string name="error_connect_timeout">The connection timed out. Check that the TV is on and Wireless debugging is enabled.</string>
+    <string name="error_command_failed">The TV did not accept that command.</string>
+    <string name="error_unsupported">This isn\'t supported by your TV or by this phone\'s Android version.</string>
+    <string name="error_unknown">Something went wrong. Try again.</string>
+    <string name="error_with_code">%1$s (code: %2$s)</string>
+    <string name="error_local_network_denied">Local network access is required to reach your TV. Allow \"Nearby devices / local network\" for NEXUS in system settings.</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">TVs</string>
+    <string name="nav_remote">Remote</string>
+    <string name="nav_apps">Apps</string>
+    <string name="nav_keyboard">Keyboard</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Home -->
+    <string name="home_subtitle">Control your Google TV from your phone over local Wi-Fi.</string>
+    <string name="home_setup_title">Set up your first TV</string>
+    <string name="home_setup_body">Pair NEXUS with your Haier or other Google TV using Wireless debugging. It takes about two minutes and only needs to be done once.</string>
+    <string name="home_setup_action">Add a TV</string>
+    <string name="home_active_tv">Active TV</string>
+    <string name="home_connect">Connect</string>
+    <string name="home_disconnect">Disconnect</string>
+    <string name="home_repair">Pair again</string>
+    <string name="home_pair_new">Pair a new TV</string>
+    <string name="home_quick_links">Quick links</string>
+    <string name="home_last_connected">Last connected %1$s</string>
+    <string name="home_never_connected">Not connected yet</string>
+    <string name="home_endpoint">%1$s · port %2$d</string>
+    <string name="home_connected_message">Connected to %1$s</string>
+
+    <!-- Pairing -->
+    <string name="pair_title">Pair with TV</string>
+    <string name="pair_brand_haier">Haier</string>
+    <string name="pair_brand_other">Other Google TV</string>
+    <string name="pair_steps_title">On your TV</string>
+    <string name="pair_step_haier_1">Press the Settings (gear) button, then open System → About.</string>
+    <string name="pair_step_haier_2">Select \"Android TV OS build\" (or \"Build\") 7 times until the TV says you are now a developer.</string>
+    <string name="pair_step_haier_3">Go back to System → Developer options and turn on Wireless debugging. Allow it if the TV asks.</string>
+    <string name="pair_step_haier_4">Open Wireless debugging → Pair device with pairing code. Keep this screen open on the TV.</string>
+    <string name="pair_step_general_1">Open Settings → System → About. On some TVs it is Settings → Device Preferences → About.</string>
+    <string name="pair_step_general_2">Select \"Build\" (or \"Android TV OS build\") 7 times to enable Developer options.</string>
+    <string name="pair_step_general_3">Open Developer options (under System or Device Preferences) and turn on Wireless debugging.</string>
+    <string name="pair_step_general_4">Choose Pair device with pairing code. The TV shows an IP address, a pairing port and a six-digit code.</string>
+    <string name="pair_step_enter">Type the IP address, pairing port and six-digit code below.</string>
+    <string name="pair_step_connect_port">The connect port is the port shown on the main Wireless debugging screen under \"IP address &amp; port\". It is different from the pairing port.</string>
+    <string name="pair_same_network">Your phone and TV must be on the same Wi-Fi network. Guest networks often block devices from seeing each other.</string>
+    <string name="pair_security_note">Wireless debugging gives this phone developer-level control of the TV. Pair only on your own trusted network, never share the code, and turn Wireless debugging off when you don\'t need it.</string>
+    <string name="pair_details_title">Pairing details</string>
+    <string name="pair_field_name">TV name</string>
+    <string name="pair_field_name_default">Living room TV</string>
+    <string name="pair_field_ip">TV IP address</string>
+    <string name="pair_field_ip_hint">e.g. 192.168.1.20</string>
+    <string name="pair_field_pairing_port">Pairing port</string>
+    <string name="pair_field_connect_port">Connect port</string>
+    <string name="pair_field_code">Six-digit pairing code</string>
+    <string name="pair_error_name">Enter a name (up to 40 characters).</string>
+    <string name="pair_error_ip">Enter a valid IPv4 address, like 192.168.1.20.</string>
+    <string name="pair_error_port">Enter a port between 1 and 65535.</string>
+    <string name="pair_error_code">Enter the six digits shown on the TV.</string>
+    <string name="pair_warning_same_port">The pairing port and connect port are normally different. Check the main Wireless debugging screen for the connect port.</string>
+    <string name="pair_action">Pair and connect</string>
+    <string name="pair_progress_pairing">Pairing with the TV…</string>
+    <string name="pair_progress_connecting">Paired. Connecting…</string>
+    <string name="pair_success">Paired and connected to %1$s.</string>
+    <string name="pair_open_remote">Open remote</string>
+    <string name="pair_paired_not_connected">Paired, but could not connect yet. Check the connect port on the TV\'s main Wireless debugging screen, then retry.</string>
+    <string name="pair_retry_connect">Retry connection</string>
+
+    <!-- Remote -->
+    <string name="remote_title">Remote</string>
+    <string name="remote_no_tv">No TV selected. Choose one on the TVs tab.</string>
+    <string name="remote_disconnected_banner">Controls are disabled until the TV is connected.</string>
+    <string name="remote_reconnect">Reconnect</string>
+    <string name="remote_ok">OK</string>
+    <string name="remote_volume">Volume</string>
+    <string name="cd_dpad_up">Up</string>
+    <string name="cd_dpad_down">Down</string>
+    <string name="cd_dpad_left">Left</string>
+    <string name="cd_dpad_right">Right</string>
+    <string name="cd_ok">OK, select</string>
+    <string name="cd_back">Back</string>
+    <string name="cd_home">Home</string>
+    <string name="cd_apps">Apps</string>
+    <string name="cd_volume_up">Volume up</string>
+    <string name="cd_volume_down">Volume down</string>
+    <string name="cd_mute">Mute</string>
+    <string name="cd_play_pause">Play or pause</string>
+    <string name="cd_rewind">Rewind</string>
+    <string name="cd_fast_forward">Fast forward</string>
+    <string name="cd_power">Power</string>
+    <string name="power_confirm_title">Turn off the TV?</string>
+    <string name="power_confirm_body">This sends the power key. Many TVs cannot be turned back on over Wi-Fi, so you may need the TV\'s own remote to switch it on again.</string>
+    <string name="power_confirm_action">Send power</string>
+
+    <!-- Apps -->
+    <string name="apps_title">Apps</string>
+    <string name="apps_search">Search apps</string>
+    <string name="cd_clear_search">Clear search</string>
+    <string name="apps_refresh">Refresh</string>
+    <string name="cd_refresh_apps">Refresh app list</string>
+    <string name="apps_loading">Loading apps from the TV…</string>
+    <string name="apps_empty">No apps found.</string>
+    <string name="apps_not_connected">Connect to a TV to see its apps.</string>
+    <string name="apps_favorites">Favorites</string>
+    <string name="apps_all">All apps</string>
+    <string name="apps_opening">Opening %1$s</string>
+    <string name="apps_launch_failed">Could not open %1$s. %2$s</string>
+    <string name="cd_open_app">Open %1$s</string>
+    <string name="cd_favorite_add">Add %1$s to favorites</string>
+    <string name="cd_favorite_remove">Remove %1$s from favorites</string>
+
+    <!-- Keyboard -->
+    <string name="keyboard_title">Keyboard</string>
+    <string name="keyboard_field">Text to send</string>
+    <string name="keyboard_send">Send</string>
+    <string name="keyboard_clear">Clear</string>
+    <string name="keyboard_hint">First select a text field on the TV (for example a search box), then type here and tap Send.</string>
+    <string name="keyboard_supported">Supported characters: letters A–Z, digits 0–9, space and . , ! ? - _ @ : / \' \" ( ) &amp; + = # *. Up to 300 characters. Emoji and other scripts are not supported.</string>
+    <string name="keyboard_sent">Text sent to the TV.</string>
+    <string name="keyboard_unsupported">These characters are not supported: %1$s</string>
+    <string name="keyboard_too_long">Text is too long (maximum 300 characters).</string>
+    <string name="keyboard_empty">Type something to send.</string>
+    <string name="keyboard_counter">%1$d / %2$d</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_saved_tvs">Saved TVs</string>
+    <string name="settings_no_tvs">No saved TVs yet.</string>
+    <string name="settings_active">Active</string>
+    <string name="settings_reconnect">Reconnect</string>
+    <string name="settings_edit">Edit</string>
+    <string name="settings_forget">Forget</string>
+    <string name="settings_add_tv">Pair a new TV</string>
+    <string name="cd_reconnect_tv">Reconnect to %1$s</string>
+    <string name="cd_edit_tv">Rename %1$s</string>
+    <string name="cd_forget_tv">Forget %1$s</string>
+    <string name="edit_tv_title">Rename TV</string>
+    <string name="forget_title">Forget %1$s?</string>
+    <string name="forget_body">This deletes the saved profile and this phone\'s pairing key for this TV. To fully revoke access, also open Developer options → Revoke debugging authorizations on the TV.</string>
+    <string name="forget_confirm">Forget</string>
+    <string name="forgot_message">%1$s was removed.</string>
+    <string name="saved_message">Saved.</string>
+    <string name="settings_preferences">Preferences</string>
+    <string name="settings_haptics">Haptic feedback</string>
+    <string name="settings_haptics_desc">Vibrate briefly when you press a remote button.</string>
+    <string name="settings_sound">Click sound</string>
+    <string name="settings_sound_desc">Play the system click sound (requires touch sounds to be on).</string>
+    <string name="settings_power_confirm">Confirm before power-off</string>
+    <string name="settings_power_confirm_desc">Ask before sending the power key.</string>
+    <string name="help_title">I can\'t find this setting</string>
+    <string name="help_intro">Menu names differ between TV brands and software versions. Try these:</string>
+    <string name="help_item_build">Can\'t find \"Build\": look under Settings → System → About, or Settings → Device Preferences → About. Select the entry named \"Build\" or \"Android TV OS build\" 7 times.</string>
+    <string name="help_item_devopts">Can\'t find Developer options: after enabling it, look under System, Device Preferences, or at the bottom of the main Settings list.</string>
+    <string name="help_item_wireless">No Wireless debugging option: your TV may run Android TV 10 or older, or the maker disabled it. NEXUS needs Wireless debugging (Android 11 or newer).</string>
+    <string name="help_item_network">Pairing times out: make sure both devices use the same Wi-Fi band and router, not a guest network, and that the router does not isolate clients.</string>
+    <string name="help_item_port">Connect fails after a TV restart: the connect port changes. Open Wireless debugging on the TV and update the port with Edit.</string>
+    <string name="privacy_title">Privacy</string>
+    <string name="privacy_body">No data leaves this device. NEXUS has no account, no cloud server, no analytics, no crash reporting and no ads. It talks only to your TV on your local network. TV names, addresses and settings are stored on this phone; the pairing key is encrypted with the Android Keystore. Pairing codes are never stored. Forgetting a TV deletes its profile and key.</string>
+
+    <!-- TV list (Home) -->
+    <string name="home_status_connected">Connected to %1$s</string>
+    <string name="home_status_connecting">Connecting…</string>
+    <string name="home_status_not_connected">Not connected</string>
+    <string name="home_status_hint">Tap a TV below to connect.</string>
+    <string name="home_open_remote">Open remote</string>
+    <string name="home_tvs_title">TVs on your network</string>
+    <string name="home_scanning">Scanning…</string>
+    <string name="home_refresh">Refresh</string>
+    <string name="cd_refresh_tvs">Scan again for TVs</string>
+    <string name="home_empty_title">Looking for TVs…</string>
+    <string name="home_empty_idle">No TVs found yet.</string>
+    <string name="home_empty_body">Make sure your phone and TV are on the same Wi-Fi network and that Wireless debugging is turned on on the TV.</string>
+    <string name="home_how_to">How to turn on Wireless debugging</string>
+    <string name="home_manual">Enter IP manually</string>
+    <string name="tv_unnamed">Android TV (%1$s)</string>
+    <string name="tv_unnamed_generic">Android TV</string>
+    <string name="tv_status_connected">Connected</string>
+    <string name="tv_status_paired">Paired · tap to connect</string>
+    <string name="tv_status_ready_to_pair">Ready to pair · tap to enter the code</string>
+    <string name="tv_status_new">Not paired · tap to pair</string>
+    <string name="tv_status_offline">Saved · not seen on the network</string>
+    <string name="cd_tv_card">%1$s, %2$s, %3$s</string>
+    <string name="perm_title">Allow local network access</string>
+    <string name="perm_body">NEXUS needs permission to find TVs on your Wi-Fi and talk to them. Nothing leaves your network.</string>
+    <string name="perm_retry">Try again</string>
+    <string name="perm_settings">Open settings</string>
+
+    <!-- Pair with a discovered TV (code only) -->
+    <string name="paircode_instruction">Enter the six-digit code shown on your TV.</string>
+    <string name="paircode_field">Six-digit code</string>
+    <string name="paircode_pair">Pair</string>
+    <string name="paircode_waiting_title">Open the pairing screen on your TV</string>
+    <string name="paircode_waiting_body">On the TV, go to Developer options → Wireless debugging → Pair device with pairing code. This screen updates by itself when the TV is ready.</string>
+    <string name="paircode_tv_gone">This TV is no longer visible on the network. Check that it is on and connected to the same Wi-Fi.</string>
+    <string name="paircode_wait_connect">Paired. Waiting for the TV to appear on the network…</string>
+    <string name="paircode_connect">Connect</string>
+
+    <!-- Remote "More" menu -->
+    <string name="cd_more">More options</string>
+
+    <!-- Quick launch (Remote screen) -->
+    <string name="quick_launch_title">Quick launch</string>
+    <string name="quick_launch_failed">Couldn\'t open this app on your TV.</string>
+    <string name="cd_quick_launch">Open %1$s on the TV</string>
+    <string name="settings_quick_launch_desc">Choose which apps appear on the Remote screen, and their order.</string>
+    <string name="cd_move_up">Move %1$s up</string>
+    <string name="cd_move_down">Move %1$s down</string>
+
+    <!-- TV settings shortcuts -->
+    <string name="tvsettings_title">TV settings</string>
+    <string name="tvsettings_note">Use the D-pad on your remote to change these settings on the TV.</string>
+    <string name="tvsettings_unavailable">This setting isn\'t available on your TV.</string>
+    <string name="tvsettings_not_connected">Connect to a TV to open its settings.</string>
+    <string name="tvsettings_opened">Opened on your TV.</string>
+    <string name="tvsettings_wifi">Wi-Fi</string>
+    <string name="tvsettings_bluetooth">Bluetooth</string>
+    <string name="tvsettings_display">Display</string>
+    <string name="tvsettings_sound">Sound</string>
+    <string name="tvsettings_apps">Apps</string>
+    <string name="tvsettings_device_info">Device info</string>
+    <string name="cd_tvsettings_open">Open %1$s settings on the TV</string>
+</resources>
